@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Davies Assignment Tests">
+    <test name="TC001_Verify_Davies_Group_LinkedIn_Page">
+        <classes>
+            <class name="com.tests.DaviesTest">
+                <methods>
+                    <include name="verifyLinkedInLink"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TC002_Verify_Davies_Group_Twitter_Page">
+        <classes>
+            <class name="com.tests.DaviesTest">
+                <methods>
+                    <include name="verifyTwitterLink"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TC003_Verify_Fire_Investigation_Case_Study">
+        <parameter name="searchText" value="Fire investigation" />
+        <classes>
+            <class name="com.tests.DaviesTest">
+                <methods>
+                    <include name="verifyFireInvestigationCaseStudy"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TC004_Verify_Locations">
+        <parameter name="region" value="UK &amp; Ireland" />
+        <parameter name="locationText" value="stoke" />
+        <classes>
+            <class name="com.tests.DaviesTest">
+                <methods>
+                    <include name="verifyLocations"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
